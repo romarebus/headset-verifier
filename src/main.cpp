@@ -36,7 +36,10 @@ int shell_reader(char * data);
 void shell_writer(char data);
 
 
-// The custom start message function has a bug. Entering the shell via pio monitor or minicom a few seconds after the teensy is power cycled produces the correct result. Waiting to enter a shell causes the message to only print the first 15 characters. 
+// The custom start message function has a bug. Entering the shell via pio 
+// monitor or minicom a few seconds after the teensy is power cycled produces 
+// the correct result. Waiting to enter a shell causes the message to only 
+// print the first 15 characters. 
 char* msg = (char*)" Type help to list commands.";
 
 
